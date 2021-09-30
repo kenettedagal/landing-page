@@ -23,25 +23,77 @@ html {
   }
 
   .wrapper{
-      max-width: 1000px;
+      max-width: 100VW;
+      
+      
   }
 
   .logo-text{
       font-size: 24px;
+      color: #F9FAF8;
   }
 
   .nav-bar li{
       font-size: 18px;
+      
   }
+  .hero{
+      background-color: #1F2937;
+      padding: 0 100px 40px 100px;
+  }
+  .nav-bar a{ color: #E5E7EB;}
 
   .hero-content .title{
       font-size: 48px;
+      font-weight: bold;
+      color: #F9FAF4;
   }
 
   .hero-content .secondary-text{
       font-size: 18px;
+      color:#E5E7EB;
   }
 
-  .image img{
-    max-width: 50%;
+  img{
+    max-width: 100%;
+  }
+
+
+  .nav-bar {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .nav-bar ul{
+      display: flex;
+      align-self: center;
+      gap: 2em;
+  }
+
+  .hero-content{
+      display: flex;
+      gap: 3em;
+  }
+
+  .hero-left{
+      flex: 1 1 50%;
+  }
+
+  .image{
+    flex: 1 1 50%;
+    align-self: flex-end;
+  }
+
+  .title{
+      margin-bottom: -0.3em;
+  }
+
+  .hero-button{
+      height: 2em;
+      width: 100px;
+  }
+
+  .info-title{
+      text-align: center;
+      padding-top: 1.5em;
   }
