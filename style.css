@@ -24,8 +24,14 @@ html {
 
   .wrapper{
       max-width: 100VW;
+      height: auto;
+      display: flex;
+      flex-direction: column;
       
-      
+  }
+
+  .wrapper > *{
+      flex: 1 1 20%;
   }
 
   .logo-text{
@@ -51,13 +57,18 @@ html {
 
   .hero-content .secondary-text{
       font-size: 18px;
-      color:#E5E7EB;
+      color:#e2e2e2;
   }
 
   img{
     max-width: 100%;
   }
-
+  button {
+      border-radius: 5px;
+      border: 1px solid #3882F6;
+      color: #F9FAF8;
+      font-weight: bold;
+  }
 
   .nav-bar {
       display: flex;
@@ -77,11 +88,12 @@ html {
 
   .hero-left{
       flex: 1 1 50%;
+      align-self: center;
   }
 
   .image{
-    flex: 1 1 50%;
-    align-self: flex-end;
+    flex: 1 1 30%;
+    align-self: center;
   }
 
   .title{
@@ -91,9 +103,92 @@ html {
   .hero-button{
       height: 2em;
       width: 100px;
+      background-color: #3882F6;
   }
 
   .info-title{
       text-align: center;
       padding-top: 1.5em;
+  }
+
+  .info-wrapper{
+      
+      display:flex;
+      gap: 2em;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .info-item{
+      flex: 1 1 25%;
+  }
+
+  .info-content{
+    padding: 0 100px 40px 100px;
+  }
+
+  img.info-pic{
+      border: 3px solid mediumslateblue;
+      width: auto;
+      height: 130px;
+  }
+
+  .quote-section, .call-action, footer{
+    padding: 0 100px 40px 100px;
+  }
+
+  .quote-section{
+    background-color:#E5E7EB;
+  }
+  .quote-text{
+      padding: 50px;
+      font-size: 36px;
+      color: #1F2937;
+  }
+
+  .quote-author{
+      text-align: right;
+      margin-top: -50px;
+      padding-right: 70px;
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .call-action{
+      min-height: 220px;
+  }
+
+  .action-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #3882F6;
+     margin-top: 50px;
+     padding: 25px 50px;
+     
+  }
+
+  .action-text{
+      color: #F9FAF8;
+      font-weight: bold;
+  }
+
+  .action-sec-text{
+      font-size: 12px;
+      margin-top: -0.5px;
+  }
+
+  .action-container button{
+      background-color: #3882F6;
+      border: 2px solid white;
+      border-radius: 5px;
+      height: 2em;
+      width: 100px;
+  }
+
+  footer{
+      background-color: #1F2937;
+      color: white;
+      text-align: center;
+      padding-top: 40px;
   }
